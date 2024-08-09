@@ -35,6 +35,7 @@ export const addPlayer = async (gameCode, playerName, playerId = uuidv4()) => {
 		isUndercover: false,
 		isEliminated: false,
 	});
+	localStorage.setItem("playerId", playerId);
 	return playerId;
 };
 

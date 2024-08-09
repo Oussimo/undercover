@@ -41,6 +41,7 @@ const Lobby = () => {
 					<li key={index}>{player.username}</li>
 				))}
 			</ul>
+			<p>{game.hostId}</p>
 			{game.hostId === localStorage.getItem("playerId") && (
 				<button onClick={handleStartGame}>Start Game</button>
 			)}
